@@ -13,7 +13,8 @@ function admin_bar_netlify_status_callback() {
 	$wp_admin_bar->add_node(array(
 		'id'    => 'netlify-status-topbar',
 		'title' => get_option( 'netlify_status_website_id' ) != '' ? '<div id="netlify-badge"><img src="https://api.netlify.com/api/v1/badges/'. get_option( 'netlify_status_website_id' ) .'/deploy-status"></div>': '<div id="netlify-badge">Netlify Badge Not Set</div>',
-		'href'  => admin_url( 'options-general.php?page=netlify-status%2Fswtopbar.php' )
+		'href'  => admin_url( 'options-general.php?page=netlify-status%2Fswtopbar.php' ),
+        'parent' => 'top-secondary'
 		));
 }
 add_action( 'wp_before_admin_bar_render', 'admin_bar_netlify_status_callback' ); 
