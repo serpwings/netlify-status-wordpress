@@ -17,4 +17,4 @@ A WordPress plugin to get status update of any netlify website.
 
 ## Tutorial
 
-https://www.seowings.org/software/netlify-status-on-wordpress/
+https://www.seowings.org/netlify-status-on-wordpress/
