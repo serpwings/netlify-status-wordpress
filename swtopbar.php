@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: Netlify Status
-Plugin URI: https://www.seowings.org/software/netlify-status-wordpress-plugin/ 
-Description: This WordPress plugin displays the status of any website deployed on Netlify.
-Version: 1.0
+Plugin Name: Netlify Status on WordPress
+Plugin URI: https://www.seowings.org/software/netlify-status-on-wordpress/ 
+Description: This WordPress plugin displays the status of any website deployed on Netlify. You only need to provide the "Site ID" of a netlify website.
+Version: 1.1
 Author: Faisal Shahzad
-Author URI: https://www.seowings.org/
+Author URI: https://www.serpwings.org/
 */
 
 function netlify_status_admin_bar_callback()
@@ -64,7 +64,6 @@ function netlify_status_settings_page()
         </div>
     </div>
 <?php }
-;
 
 add_action('wp_before_admin_bar_render', 'netlify_status_admin_bar_callback');
 add_action('wp_enqueue_scripts', 'netlify_status_enqueue_scripts');
