@@ -5,7 +5,7 @@ Plugin URI: https://www.seowings.org/software/netlify-status-on-wordpress/
 Description: This WordPress plugin displays the status of any website deployed on Netlify. You only need to provide the "Site ID" of a netlify website.
 Version: 1.1
 Author: Faisal Shahzad
-Author URI: https://www.serpwings.org/
+Author URI: https://www.serpwings.com/
 */
 
 function netlify_status_admin_bar_callback()
